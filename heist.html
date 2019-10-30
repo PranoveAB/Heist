@@ -1,0 +1,96 @@
+<html>
+    <title>JackpotQuest</title>
+    <link rel="icon" href="heist.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp,lang=en" />
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="clues.js"></script>
+
+    <head><!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148928871-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'UA-148928871-1');
+      </script></head>
+
+<script type="text/javascript">
+
+function p2() {
+                var testV = 1;
+                var pass1 = prompt('Please Enter Your Password','');
+                while (testV < 3) {
+                if (!pass1)
+                history.go(-1);
+                if (pass1.toLowerCase() == "iamin") {
+                //alert('You Got it Right!');
+                window.open('last.html');
+                break;
+                }
+                //testV+=1;
+                var pass1 =
+                prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+                }
+                if (pass1.toLowerCase()!="password" & testV ==3)
+                history.go(-1);
+                return " ";
+                }
+
+
+</script>
+
+    
+    
+    <body style="background-color:#CFD8DC;"></body>
+
+    <body>
+            <div class="parent">
+                    <img class="child" src="semaphore.png"/>
+                    
+                  </div>  
+            <div class="parent">
+                    <img class="child" src="jack.jpg"/>
+                        
+               </div>             
+        <p>
+            
+        </p>      
+        
+        
+        <hr class="new">
+        <!--<div id="clockdiv" class=count>Time Left: </div><span id="time"></span></div>
+        <div id="counter" class="count">Time left = <span id="time"></span></div>-->
+          <div align="center"><strong>CLUE 3: BEG, BORROW, STEAL!</strong></div><br>
+          
+          <div id="ten-countdown" class="counter"></div>
+          
+          <br><br><br>
+            <div class="rules"><p><strong>RULES:</strong></p><br><br>
+                <p>Decode the following and collect them.<strong>YOU HAVE ONLY 25 MIUNTES ON THE CLOCK.</strong></p><br><br>
+                <p> 1. I am made of two parts-Using the first I hear and to the second I speak.<form><input type="text1" class="item" id="a1" oninput="ans()"><span id="error1"></span><br><br></p>
+                <p> 2. I come in all colours, designs and sizes. give you shelter but you can't use me when it's windy.</p><form><input type="text2" class="item" id="a2" oninput="ans()"><span id="error2"></span><br><br>
+                <p> 3. I'm a lever with the fulcrum at the centre. I have a sharp edge and commonly used everywhere.</p><form><input type="text3" class="item" id="a3" oninput="ans()"><span id="error3"></span><br><br>
+                <p> 4. Over, under, pull it tight. Make a bow, pull it through to do it right.</p><form><input type="text4" class="item" id="a4" oninput="ans()"><span id="error4" ></span><br><br>
+                <p> 5. If you need to draw a circle
+                       Use a compass to make it great. 
+                       If you need to draw a line,
+                       And want to make sure your guess isn’t wrong, 
+                       well then yes! your guess isn't wrong.<br></p><form><input type="text5" class="item" id="a5" value="" oninput="ans()"><span id="error5"></span><br><br></p>
+                <p> 6. I am round, I roll and I bounce.</p><form><input type="text6" class="item" id="a6" value="" oninput="ans()"><span id="error6"></span><br><br></p>
+ 
+                     </p>
+                <br><br>     
+                <p>Decode the following to lead you to the next location.</p><br>
+                <p>Rules to find the next location:<br><br>
+                  1. Hidden message is the clue to finding the next location.<br><br>
+                  2. Decode the hidden message and deduce where the next location might be.<br><br>
+                  3. Go to the next location to find the volunteer with the access code.<br><br><br></p>
+                <p><strong>CLUE:</strong><br><br></p>  
+
+
+                <div align="center" class="button"><button onclick="p2()" style="display: inline;">Next Clue</button></div>
+          </div>
+    </body>
+    <script type="text/javascript" src="timer.js"></script>
+</html>    

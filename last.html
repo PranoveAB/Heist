@@ -1,0 +1,85 @@
+<html>
+    <title>JackpotQuest</title>
+    <link rel="icon" href="heist.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp,lang=en" />
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="clues.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    <body style="background-color:#CFD8DC;"></body>
+    
+    <head><!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148928871-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'UA-148928871-1');
+      </script></head>
+
+<script type="text/javascript">
+function p1() {
+            var testV = 1;
+            var pass1 = prompt('Please Enter Your Password','');
+            while (testV < 3) {
+            if (!pass1)
+            history.go(-1);
+            if (pass1.toLowerCase() == "letmein") {
+            //alert('You Got it Right!');
+            window.open('riddles.html');
+            break;
+            }
+            //testV+=1;
+            var pass1 =
+            prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+            }
+            if (pass1.toLowerCase()!="password" & testV ==3)
+            history.go(-1);
+            return " ";
+            }
+
+
+</script>
+
+    
+    <body>
+            <div class="parent">
+                    <img class="child" src="semaphore.png"/>
+                    
+                  </div>  
+            <div class="parent">
+                    <img class="child" src="jack.jpg"/>
+                        
+               </div>             
+        <p>
+            
+        </p>          
+        <hr class="new">          
+          <div align="center"><img src="fun.gif" alt="atb"></div>
+          <br><br><br>
+          <div align="center" style="font-size: 25"><strong>It's Homecoming Time!</strong></div>
+          <br><br><br>
+          <!--<div align="center"><strong>CLUE 1</strong></div><br><br>
+          <div class="rules"><p><strong>RULES:</strong></p><br><br>-->
+          <!--<p>Decode the following to lead you to the next location.</p><br>
+          <p>Rules to find the next location:<br><br>
+            1. Hidden message is the clue to finding the next location.<br><br>
+            2. Decode the hidden message and deduce where the next location might be.<br><br>
+            3. Go to the next location to find the volunteer with the access code.<br><br><br></p>-->
+            
+          <div style= "font-size: 28;"><p><strong>A'ight guys, we had a long run so far. Well played!</strong><br><br></p>  
+          <p>I'm in the room which is "The One Where Ross Moves In". I'll be there, waiting for a HIGH5. Get there fast, before Ross does!</p>
+                <br><br></div>
+
+                <!--<div align="center"><input type="text" id="clue1" name="firstname" placeholder="Access Code" value=""><br><span id="error"></span><br></div>
+                <br><br>-->
+
+                <!--<div align="center" class="button"><button onclick="p1()" style="display: inline;">Next Clue</button></div>-->
+
+                
+
+          </div>
+    </body>
+
+
+</html>

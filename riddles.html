@@ -1,0 +1,92 @@
+<html>
+    <title>JackpotQuest</title>
+    <link rel="icon" href="heist.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <link rel="stylesheet" href="main.css">
+    <!--<script type="text/javascript" src="clues.js"></script>-->
+    <script type="text/javascript" src="ans1.js"></script>
+    
+    <head><!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148928871-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'UA-148928871-1');
+      </script></head>
+    
+    <script type="text/javascript">
+
+      function p3() {
+                      var testV = 1;
+                      var pass1 = prompt('Please Enter Your Password','');
+                      while (testV < 3) {
+                      if (!pass1)
+                      history.go(-1);
+                      if (pass1.toLowerCase() == "thereyougo") {
+                      //alert('You Got it Right!');
+                      window.open('heist.html');
+                      break;
+                      }
+                      //testV+=1;
+                      var pass1 =
+                      prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+                      }
+                      if (pass1.toLowerCase()!="password" & testV ==3)
+                      history.go(-1);
+                      return " ";
+                      }
+      
+      
+      </script>
+
+    
+    <body style="background-color:#CFD8DC;"></body>
+
+    <body>
+            <div class="parent">
+                    <img class="child" src="semaphore.png"/>
+                    
+                  </div>  
+            <div class="parent">
+                    <img class="child" src="jack.jpg"/>
+                        
+               </div>             
+        <p>
+            
+        </p>      
+        
+        
+        <hr class="new">
+       
+          <div align="center"><strong>CLUE 2: Its Riddle Time!</strong></div><br>
+          
+        
+          
+          <br><br><br>
+            <div class="rules"><p><strong>RULES:</strong></p><br><br>
+                <p>Decode the following <strong>AS FAST AS YOU CAN AND GO TO THE NEXT LOCATION.</strong></p><br><br>
+                <p> 1. What has keys but no locks, space but no room and you can enter but you can't go in side? (8 Letter Word) <form><input type="text1" class="item" id="a1" oninput="ans1()"><span id="err1"></span><br><br></p>
+                <p> 2. When you face North I face South, When you look me in the eye I will never Lie, What am I? (6 Letter Word</p><form><input type="text2" class="item" id="a2" oninput="ans1()"><span id="err2"></span><br><br>
+                <p> 3. I live without a body, speak without a tongue, everyone can hear me, but no one can see me, What am I? (4 Letter Word)</p><form><input type="text3" class="item" id="a3" oninput="ans1()"><span id="err3"></span><br><br>
+                <p> 4. A crystal ball, the pickpocket’s plight, In a fleshy prison suspended, Stronger in day, weaker at night, Upon this my power depended. (3 Letter Word)</p><form><input type="text4" class="item" id="a4" oninput="ans1()"><span id="err4" ></span><br><br>
+                <p> 5. If you have me, you want to share me. If you share me, you haven't got me. What am I? (6 Letter Word)<br></p><form><input type="text5" class="item" id="a5" value="" oninput="ans1()"><span id="err"></span><br><br></p>
+                <p> 6. Tear one off and scratch my head. What was red is black instead. What am I? (10 Letter Word)</p><form><input type="text6" class="item" id="a6" value="" oninput="ans1()"><span id="err6"></span><br><br></p>
+ 
+                     </p>
+                <br><br>     
+                <p>Decode the following to lead you to the next location.</p><br>
+                <p>Rules to find the next location:<br><br>
+                  1. Hidden message is the clue to finding the next location.<br><br>
+                  2. Decode the hidden message and deduce where the next location might be.<br><br>
+                  3. Go to the next location to find the volunteer with the access code.<br><br><br></p>
+                <p><strong>CLUE:</strong><br><br></p>  
+
+
+                <div align="center" class="button"><button onclick="p3()" style="display: inline;">Next Clue</button></div>
+          </div>
+          
+    </body>
+    
+</html>    

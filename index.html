@@ -1,0 +1,91 @@
+<html>
+    <title>JackpotQuest</title>
+    <link rel="icon" href="heist.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp,lang=en" />
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="clues.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    <body style="background-color:#CFD8DC;"></body>
+    <head><!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148928871-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-148928871-1');
+        </script></head>
+<script type="text/javascript">
+function p1() {
+            var testV = 1;
+            var pass1 = prompt('Please Enter Your Password','');
+            while (testV < 3) {
+            if (!pass1)
+            history.go(-1);
+            if (pass1.toLowerCase() == "ohhi") {
+            //alert('You Got it Right!');
+            window.open('main.html');
+            window.open("", "_self", "").close(); 
+            return false;
+            break;
+            }
+            //testV+=1;
+            var pass1 =
+            prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+            }
+            if (pass1.toLowerCase()!="password" & testV ==3)
+            history.go(-1);
+            return " ";
+            }
+
+
+</script>
+
+    
+    <body>
+            <div class="parent">
+                    <img class="child" src="semaphore.png"/>
+                    
+                  </div>  
+            <div class="parent">
+                    <img class="child" src="jack.jpg"/>
+                        
+               </div>             
+        <p>
+            
+        </p>          
+        <hr class="new">          
+          <div align="center"><img src="teasure.gif" alt="atb"></div>
+          <br><br>
+          <div align="center" style="font-size: 25"><strong>ALL THE BEST!</strong></div>
+          <br><br><br>
+          <!--<div align="center"><strong>CLUE 1</strong></div><br><br>-->
+          <div class="rules"><p><strong>RULES:</strong></p><br><br>
+          <!--p>Decode the following to lead you to the next location.</p><br>
+          Rules to find the next location:<br><br>-->
+       <p>  
+            Rules and Regulations:<br><br>
+            ● Each team should have internet access. <strong>Only Google Chrome browser is supported.</strong><br><br>
+            ● At least one person per team must have a QR code scanner in their phones.<br><br>
+            ● Each clue will lead to the next location in the game.<br><br>
+            ● The whole hunt procedure is run on a website link. (No physical clues)<br><br>
+            ● Only if the exact answer/answers is/are shown to the volunteer, will you be permitted to see the next clue.<br><br>
+            ● The team members should stay together and malpractice of any kind is strongly opposed.<br><br>
+            ● If any object is moved to search for the clues, kindly replace the object.<br><br>
+            ● Do not tamper with, destroy or alter the clues at their locations.<br><br>
+            ● Participants are advised to know all the places in the college premises well before the event.<br><br>
+            ● DECISION OF " Semaphore '19 " IS FINAL ON ALL MATTERS.<br><br><br></p>
+
+
+                <!--<div align="center"><input type="text" id="clue1" name="firstname" placeholder="Access Code" value=""><br><span id="error"></span><br></div>
+                <br><br>-->
+
+                <div align="center" class="button"><button onclick="p1()" style="display: inline;">Lets Begin!</button></div>
+
+                
+
+          </div>
+    </body>
+
+
+</html>
